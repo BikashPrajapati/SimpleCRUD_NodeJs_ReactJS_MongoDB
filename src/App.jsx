@@ -5,9 +5,27 @@ import Home from "./pages/public/Home";
 // import About from "./pages/public/About";
 // import Login from "./pages/Login";
 // import Dashboard from "./pages/Dashboard";
+import AOS from "aos";
+import { useEffect } from "react";
+
+// function App() {
+//   useEffect(() => {
+//     AOS.init({
+//       duration: 1000,   // animation duration (ms)
+//       once: true,       // animate only once
+//       easing: "ease-in-out",
+//     });
+//   }, []);
 
 
 function App() {
+   useEffect(() => {
+    AOS.init({
+      duration: 1000,   // animation duration (ms)
+      once: true,       // animate only once
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <BrowserRouter>
       <Routes>

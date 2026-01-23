@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import "./index.css";              // Tailwind
 import "./assets/css/main.css";    // Template CSS
+import "./assets/vendor/aos/aos.css";    // Template CSS
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
