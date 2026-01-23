@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/public/Home";
 // import PublicProjects from "./pages/public/Projects";
 // import About from "./pages/public/About";
-// import Login from "./pages/Login";
-// import Dashboard from "./pages/Dashboard";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 import AOS from "aos";
 import { useEffect } from "react";
 
@@ -37,8 +37,8 @@ function App() {
         <Route path="/about" element={<About />} /> */}
 
         {/* Admin */}
-        {/* <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} /> */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   );
